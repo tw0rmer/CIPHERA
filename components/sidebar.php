@@ -18,7 +18,7 @@
         </a>
       </li>
       
-      <li class="sidebar-nav-item sidebar-nav-item-has-children">
+      <li class="sidebar-nav-item sidebar-nav-item-has-children" data-id="data">
         <a href="#" class="sidebar-nav-link">
           <i class="fas fa-database"></i>
           <span>Data</span>
