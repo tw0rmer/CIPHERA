@@ -1,0 +1,253 @@
+/* Card Loading Animation */
+@keyframes cardLoad {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: cardLoad 0.5s ease-out forwards;
+}
+
+.card-grid .card:nth-child(1) { animation-delay: 0.1s; }
+.card-grid .card:nth-child(2) { animation-delay: 0.2s; }
+.card-grid .card:nth-child(3) { animation-delay: 0.3s; }
+.card-grid .card:nth-child(4) { animation-delay: 0.4s; }
+.card-grid .card:nth-child(5) { animation-delay: 0.5s; }
+.card-grid .card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(157, 78, 221, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(157, 78, 221, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(157, 78, 221, 0);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Neon Glow Animation */
+@keyframes neonGlow {
+  0% {
+    text-shadow: 0 0 5px rgba(157, 78, 221, 0.7), 
+                 0 0 10px rgba(157, 78, 221, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(157, 78, 221, 0.8), 
+                 0 0 20px rgba(157, 78, 221, 0.6), 
+                 0 0 30px rgba(157, 78, 221, 0.4);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(157, 78, 221, 0.7), 
+                 0 0 10px rgba(157, 78, 221, 0.5);
+  }
+}
+
+.neon-text {
+  animation: neonGlow 2s ease-in-out infinite alternate;
+}
+
+/* Success Status Animation */
+@keyframes connectPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(4, 231, 98, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(4, 231, 98, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(4, 231, 98, 0);
+  }
+}
+
+.status-dot.online {
+  animation: connectPulse 2s infinite;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Slide Down Animation */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-down {
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.3s ease-out forwards;
+}
+
+/* Shimmer Loading Effect */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(157, 78, 221, 0.1) 25%,
+    rgba(157, 78, 221, 0.2) 50%,
+    rgba(157, 78, 221, 0.1) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Fade In Up Animation for Items */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.activity-item {
+  animation: fadeInUp 0.3s ease-out forwards;
+  opacity: 0;
+}
+
+.activity-list .activity-item:nth-child(1) { animation-delay: 0.1s; }
+.activity-list .activity-item:nth-child(2) { animation-delay: 0.2s; }
+.activity-list .activity-item:nth-child(3) { animation-delay: 0.3s; }
+.activity-list .activity-item:nth-child(4) { animation-delay: 0.4s; }
+.activity-list .activity-item:nth-child(5) { animation-delay: 0.5s; }
+
+/* Gradient Animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, 
+    rgba(157, 78, 221, 0.1), 
+    rgba(0, 246, 255, 0.1), 
+    rgba(255, 44, 240, 0.1));
+  background-size: 200% 200%;
+  animation: gradientShift 10s ease infinite;
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 2s linear infinite;
+}
+
+/* Neon Border Pulse */
+@keyframes borderPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(157, 78, 221, 0.7);
+    border-color: rgba(157, 78, 221, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 10px 0 rgba(157, 78, 221, 0.7);
+    border-color: rgba(157, 78, 221, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(157, 78, 221, 0.7);
+    border-color: rgba(157, 78, 221, 0.7);
+  }
+}
+
+.neon-border-pulse {
+  animation: borderPulse 2s ease-in-out infinite;
+}
+
+/* Scale Animation */
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scale {
+  animation: scale 2s ease-in-out infinite;
+}
+
+/* Typing Animation */
+@keyframes typing {
+  0% { width: 0 }
+  100% { width: 100% }
+}
+
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 2s steps(30, end) forwards;
+}
